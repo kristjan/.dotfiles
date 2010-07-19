@@ -29,10 +29,21 @@ set incsearch
 
 " UI
 set wildmenu
-set statusline=%f%m%r%h%w\ %Y\ %03l/%03L\ %02v
+set statusline=%f%m%r%h%w\ %Y\ %03l/%03L\ %02v\ %=\ %n\ "
 set laststatus=2
-hi MatchParen cterm=bold ctermbg=none ctermfg=none
 
 " Command-T Options
 let g:CommandTMaxHeight=10
 let g:CommandTMatchWindowAtTop=1
+
+" Colors
+set t_Co=256
+highlight MatchParen cterm=bold      ctermfg=none ctermbg=none
+highlight Search     cterm=none      ctermfg=0    ctermbg=3
+highlight ToDo       cterm=underline ctermfg=3    ctermbg=none
+
+" Shortcuts
+map \h :nohlsearch<CR>
+
+" Remove trailing whitespace
+autocmd BufWritePre * :%s/\s\+$//e
