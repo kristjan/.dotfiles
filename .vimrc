@@ -39,9 +39,12 @@ let g:CommandTMatchWindowAtTop=1
 
 " Colors
 set t_Co=256
-highlight MatchParen cterm=bold      ctermfg=none ctermbg=none
-highlight Search     cterm=none      ctermfg=0    ctermbg=3
-highlight ToDo       cterm=underline ctermfg=3    ctermbg=none
+highlight MatchParen cterm=bold      ctermfg=none  ctermbg=none
+highlight Search     cterm=none      ctermfg=0     ctermbg=3
+highlight ToDo       cterm=underline ctermfg=3     ctermbg=none
+highlight Pmenu                                    ctermbg=8
+highlight PmenuSel   cterm=bold      ctermfg=10    ctermbg=4
+highlight PmenuThumb                 ctermfg=6
 
 " Shortcuts
 map \h :nohlsearch<CR>
