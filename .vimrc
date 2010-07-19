@@ -33,6 +33,10 @@ set statusline=%f%m%r%h%w\ %Y\ %03l/%03L\ %02v\ %=\ %n\ "
 set laststatus=2
 set mouse=a " On!
 
+" Command-T Options
+let g:CommandTMaxHeight=10
+let g:CommandTMatchWindowAtTop=1
+
 " Colors
 set t_Co=256
 highlight MatchParen cterm=bold      ctermfg=none  ctermbg=none
@@ -47,12 +51,3 @@ map \h :nohlsearch<CR>
 
 " Remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
-
-" Plugins
-  " CheckSyntax
-  let g:checksyntax_auto_ruby=1
-
-  " Command-T Options
-  let g:CommandTMaxHeight=10
-  let g:CommandTMatchWindowAtTop=1
-
