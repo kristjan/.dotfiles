@@ -36,10 +36,6 @@ set laststatus=2
 let g:CommandTMaxHeight=10
 let g:CommandTMatchWindowAtTop=1
 
-" DelimitMate Options
-let g:delimitMate_expand_space=1
-let g:delimitMate_expand_cr=1
-
 " Colors
 set t_Co=256
 highlight MatchParen cterm=bold      ctermfg=none ctermbg=none
