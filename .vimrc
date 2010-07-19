@@ -31,6 +31,7 @@ set incsearch
 set wildmenu
 set statusline=%f%m%r%h%w\ %Y\ %03l/%03L\ %02v\ %=\ %n\ "
 set laststatus=2
+set mouse=a " On!
 
 " Command-T Options
 let g:CommandTMaxHeight=10
