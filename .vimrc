@@ -38,6 +38,7 @@ let g:CommandTMaxHeight=10
 let g:CommandTMatchWindowAtTop=1
 
 " Colors
+map \c :set t_Co=16<CR>
 set t_Co=256
 highlight MatchParen cterm=bold      ctermfg=none  ctermbg=none
 highlight Search     cterm=none      ctermfg=0     ctermbg=3
