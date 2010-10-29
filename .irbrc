@@ -8,10 +8,12 @@ require 'rubygems'
 # Needs to come first
 require 'wirble'
 Wirble::Colorize.colors.merge!({
+  :class => :yellow,
   :comma => :gray,
   :number => :purple,
   :open_array => :gray, :close_array => :gray,
   :open_hash => :gray, :close_hash => :gray,
+  :open_object => :blue, :close_object => :blue,
   :open_string => :green, :close_string => :green,
   :range => :gray,
   :refers => :gray,
