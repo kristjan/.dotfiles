@@ -23,6 +23,8 @@ Wirble::Colorize.colors.merge!({
 Wirble.init
 Wirble.colorize
 
+require 'ap' # awesome_print
+
 require 'bond'
 Bond.start
 
