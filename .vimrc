@@ -40,6 +40,7 @@ let g:CommandTMatchWindowAtTop=1
 " Colors
 map \c :set t_Co=16<CR>
 set t_Co=256
+colors ir_black
 highlight MatchParen cterm=bold      ctermfg=none  ctermbg=none
 highlight Search     cterm=none      ctermfg=0     ctermbg=3
 highlight ToDo       cterm=underline ctermfg=3     ctermbg=none
@@ -49,6 +50,13 @@ highlight PmenuThumb                 ctermfg=6
 
 " Shortcuts
 map \h :nohlsearch<CR>
+map <C-k> <C-w>k
+map <C-j> <C-w>j
+map <C-l> <C-w>l
+map <C-h> <C-w>h
+
+" Anti-shortcuts
+map <S-k> <Nop>
 
 " Remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
