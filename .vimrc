@@ -32,6 +32,9 @@ set wildmenu
 set statusline=%f%m%r%h%w\ %Y\ %03l/%03L\ %02v\ %=\ %n\ "
 set laststatus=2
 set mouse=a " On!
+set cursorline
+autocmd WinEnter * setlocal cursorline
+autocmd WinLeave * setlocal nocursorline
 
 " Command-T Options
 let g:CommandTMaxHeight=10
@@ -41,12 +44,14 @@ let g:CommandTMatchWindowAtTop=1
 map \c :set t_Co=16<CR>
 set t_Co=256
 colors ir_black
+
+highlight CursorLine cterm=none  ctermfg=none  ctermbg=0
 highlight MatchParen cterm=bold      ctermfg=none  ctermbg=none
-highlight Search     cterm=none      ctermfg=0     ctermbg=3
-highlight ToDo       cterm=underline ctermfg=3     ctermbg=none
 highlight Pmenu                                    ctermbg=8
 highlight PmenuSel   cterm=bold      ctermfg=10    ctermbg=4
 highlight PmenuThumb                 ctermfg=6
+highlight Search     cterm=none      ctermfg=0     ctermbg=3
+highlight ToDo       cterm=underline ctermfg=3     ctermbg=none
 
 " Shortcuts
 map \h :nohlsearch<CR>
