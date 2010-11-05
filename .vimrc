@@ -45,13 +45,15 @@ map \c :set t_Co=16<CR>
 set t_Co=256
 colors ir_black
 
-highlight CursorLine cterm=none  ctermfg=none  ctermbg=0
-highlight MatchParen cterm=bold      ctermfg=none  ctermbg=none
-highlight Pmenu                                    ctermbg=8
-highlight PmenuSel   cterm=bold      ctermfg=10    ctermbg=4
-highlight PmenuThumb                 ctermfg=6
-highlight Search     cterm=none      ctermfg=0     ctermbg=3
-highlight ToDo       cterm=underline ctermfg=3     ctermbg=none
+highlight CursorLine   cterm=bold      ctermfg=none  ctermbg=0
+highlight MatchParen   cterm=bold      ctermfg=none  ctermbg=none
+highlight Pmenu                                      ctermbg=8
+highlight PmenuSel     cterm=bold      ctermfg=10    ctermbg=4
+highlight PmenuThumb                   ctermfg=6
+highlight Search       cterm=none      ctermfg=0     ctermbg=3
+highlight StatusLine   cterm=bold      ctermfg=2     ctermbg=0
+highlight StatusLineNC cterm=none      ctermfg=7     ctermbg=0
+highlight ToDo         cterm=underline ctermfg=3     ctermbg=none
 
 " Shortcuts
 map \h :nohlsearch<CR>
