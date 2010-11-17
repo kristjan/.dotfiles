@@ -47,6 +47,7 @@ colors ir_black
 
 highlight CursorLine   cterm=bold      ctermfg=none  ctermbg=0
 highlight MatchParen   cterm=bold      ctermfg=none  ctermbg=none
+highlight OverLength   cterm=none      ctermfg=7  ctermbg=8
 highlight Pmenu                                      ctermbg=8
 highlight PmenuSel     cterm=bold      ctermfg=10    ctermbg=4
 highlight PmenuThumb                   ctermfg=6
@@ -54,6 +55,8 @@ highlight Search       cterm=none      ctermfg=0     ctermbg=3
 highlight StatusLine   cterm=bold      ctermfg=2     ctermbg=0
 highlight StatusLineNC cterm=none      ctermfg=7     ctermbg=0
 highlight ToDo         cterm=underline ctermfg=3     ctermbg=none
+
+match Overlength /\%81v.\+/
 
 " Shortcuts
 map \h :nohlsearch<CR>
