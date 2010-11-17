@@ -66,7 +66,7 @@ map <C-l> <C-w>l
 map <C-h> <C-w>h
 
 " Anti-shortcuts
-map <S-k> <Nop>
+map <S-k> k<S-j>$
 
 " Remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
