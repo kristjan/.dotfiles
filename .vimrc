@@ -46,8 +46,8 @@ set t_Co=256
 colors ir_black
 
 highlight CursorLine   cterm=bold      ctermfg=none  ctermbg=0
-highlight MatchParen   cterm=bold      ctermfg=none  ctermbg=none
-highlight OverLength   cterm=none      ctermfg=7  ctermbg=8
+highlight MatchParen   cterm=bold      ctermfg=3     ctermbg=0
+highlight OverLength   cterm=none      ctermfg=7     ctermbg=8
 highlight Pmenu                                      ctermbg=8
 highlight PmenuSel     cterm=bold      ctermfg=10    ctermbg=4
 highlight PmenuThumb                   ctermfg=6
