@@ -1,0 +1,71 @@
+alias ..='cd ..'
+alias srcs='. ~/.bashrc'
+
+alias a='echo á'
+alias kristjan='echo Kristj$(a)n'
+alias e='echo é'
+alias petursson='echo P$(e)tursson'
+
+alias la='ls -a'
+alias dir='ls -l'
+alias dira='ls -la'
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+if [ -e /usr/bin/vimx ]; then
+  alias vim='/usr/bin/vimx';
+fi
+alias aliases='vim ~/.aliases; srcs'
+alias options='vim ~/.bashrc; srcs'
+alias profile='vim ~/.bash_profile; srcs'
+alias notes='vim ~/notes'
+alias :e='vim'
+
+alias synergys='killall synergys; synergys -f --config ~/.synergyrc --daemon'
+alias synergyc='killall synergyc; /usr/bin/synergyc kristjan.corp.causes.com'
+
+alias mig='rake db:migrate && rake db:test:prepare'
+
+alias git='git-achievements'
+alias gull='git pull'
+alias gush='git push'
+alias gulsh='gull && gush'
+alias giff='git diff'
+alias giffc='git diff --cached'
+alias gom='git commit'
+alias gomam='gom -a -m'
+alias gomend='gom --amend'
+alias gad='git add'
+alias gst='git status'
+alias go='git checkout'
+alias gbr='git branch'
+alias grm='git rebase master'
+alias gcm='git checkout master'
+alias gitv='git log -1 | head -1 | awk "{print \$2}"'
+alias unmerged='vim $(gst | ack unmerged | cut -d : -f 2)'
+
+alias sql='mysql -uroot'
+
+alias cdgem='cd /usr/local/lib/ruby/gems/1.8/gems'
+
+alias middle='ssh dev@middle'
+alias util='ssh dev@util1'
+alias rmlog='for file in log/*; do cat /dev/null > $file; done'
+alias running='ps aux | grep $1'
+
+alias sshh='ssh dev@util1 -t "ssh $1"'
+alias sshhr='ssh root@util1 -t "ssh $1"'
+
+alias r='. cd_to_repo $1'
+
+alias resmem='sudo /sbin/service memcached restart'
+
+alias listmp='find . | ack "(~|\.sw[op])$"'
+alias cleantmp='echo Deleting $(listmp | wc -l ) files && rm $(listmp)'
+alias cleandbg='cat /dev/null > tmp/debug.log'
+alias debug='tail -f tmp/debug.log'
+alias applog='tail -f /var/log/apps.log'
+
+# Typos
+alias mc='mv'
