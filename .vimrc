@@ -47,7 +47,7 @@ colors ir_black
 
 highlight CursorLine   cterm=bold      ctermfg=none  ctermbg=0
 highlight MatchParen   cterm=bold      ctermfg=3     ctermbg=0
-highlight OverLength   cterm=none      ctermfg=7     ctermbg=8
+highlight OverLength   cterm=none      ctermfg=3     ctermbg=8
 highlight Pmenu                                      ctermbg=8
 highlight PmenuSel     cterm=bold      ctermfg=10    ctermbg=4
 highlight PmenuThumb                   ctermfg=6
@@ -64,6 +64,8 @@ map <C-k> <C-w>k
 map <C-j> <C-w>j
 map <C-l> <C-w>l
 map <C-h> <C-w>h
+
+map <Leader>T :CommandTFlush<CR>
 
 " Anti-shortcuts
 map <S-k> k<S-j>$
