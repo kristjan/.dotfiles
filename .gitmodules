@@ -7,33 +7,12 @@
 [submodule "bundle/vim-abolish"]
 	path = bundle/vim-abolish
 	url = git://github.com/tpope/vim-abolish.git
-[submodule "bundle/taglist.vim"]
-	path = bundle/taglist.vim
-	url = git://github.com/jc00ke/taglist.vim.git
 [submodule "bundle/ack.vim"]
 	path = bundle/ack.vim
 	url = git://github.com/mileszs/ack.vim.git
-[submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
-	url = git://github.com/scrooloose/nerdtree.git
-[submodule "bundle/mustache.vim"]
-	path = bundle/mustache.vim
-	url = git://github.com/jc00ke/mustache.vim.git
-[submodule "bundle/vim-ruby-debugger"]
-	path = bundle/vim-ruby-debugger
-	url = git://github.com/astashov/vim-ruby-debugger.git
-[submodule "bundle/vim-supertab"]
-	path = bundle/vim-supertab
-	url = git://github.com/tsaleh/vim-supertab.git
-[submodule "bundle/vim-vividchalk"]
-	path = bundle/vim-vividchalk
-	url = git://github.com/tpope/vim-vividchalk.git
 [submodule "bundle/vim-unimpaired"]
 	path = bundle/vim-unimpaired
 	url = git://github.com/tpope/vim-unimpaired.git
-[submodule "bundle/checksyntax_vim"]
-	path = bundle/checksyntax_vim
-	url = git://github.com/tomtom/checksyntax_vim.git
 [submodule "bundle/vim-git"]
 	path = bundle/vim-git
 	url = git://github.com/tpope/vim-git.git
@@ -43,12 +22,6 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = git://github.com/scrooloose/syntastic.git
-[submodule "bundle/vim-haml"]
-	path = bundle/vim-haml
-	url = git://github.com/tpope/vim-haml.git
-[submodule "bundle/vim-cucumber"]
-	path = bundle/vim-cucumber
-	url = git://github.com/tpope/vim-cucumber.git
 [submodule "bundle/vim-rails"]
 	path = bundle/vim-rails
 	url = git://github.com/tpope/vim-rails.git
@@ -79,12 +52,12 @@
 [submodule "bundle/tabular"]
 	path = bundle/tabular
 	url = https://github.com/godlygeek/tabular.git
-[submodule "bundle/vim-autoclose"]
-	path = bundle/vim-autoclose
-	url = https://github.com/Townk/vim-autoclose.git
 [submodule "bundle/vim-endwise"]
 	path = bundle/vim-endwise
 	url = https://github.com/tpope/vim-endwise.git
 [submodule "bundle/jquery"]
 	path = bundle/jquery
 	url = https://github.com/vim-scripts/jQuery.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = https://github.com/ervandew/supertab.git

@@ -30,6 +30,7 @@ set incsearch
 " UI
 set wildmenu
 set statusline=%f%m%r%h%w\ %Y\ %03l/%03L\ %02v\ %=\ %n\ "
+set statusline+=
 set laststatus=2
 set mouse=a " On!
 set cursorline
@@ -39,6 +40,9 @@ autocmd WinLeave * setlocal nocursorline
 " Command-T Options
 let g:CommandTMaxHeight=10
 let g:CommandTMatchWindowAtTop=1
+
+" Syntastic Options
+let g:syntastic_auto_loc_list=1
 
 " Colors
 map \c :set t_Co=16<CR>
