@@ -61,6 +61,7 @@ match Overlength /\%81v.\+/
 " Shortcuts
 map \a :Ack
 map \A "zyw:exe ":Ack ".@z<CR>
+map \c :ccl<CR>
 map \h :nohlsearch<CR>
 map <C-k> <C-w>k
 map <C-j> <C-w>j
