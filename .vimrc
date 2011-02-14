@@ -63,6 +63,7 @@ highlight ToDo         cterm=underline ctermfg=3     ctermbg=none
 match Overlength /\%81v.\+/
 
 " Shortcuts
+map \a :Ack
 map \h :nohlsearch<CR>
 map <C-k> <C-w>k
 map <C-j> <C-w>j
