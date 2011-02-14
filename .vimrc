@@ -34,9 +34,6 @@ set statusline=%f%m%r%h%w\ %Y\ %03l/%03L\ %02v\ %=\ %n\ "
 set statusline+=
 set laststatus=2
 set mouse=a " On!
-set cursorline
-autocmd WinEnter * setlocal cursorline
-autocmd WinLeave * setlocal nocursorline
 
 " Command-T Options
 let g:CommandTMaxHeight=10
@@ -50,7 +47,6 @@ map \c :set t_Co=16<CR>
 set t_Co=256
 colors ir_black
 
-highlight CursorLine   cterm=bold      ctermfg=none  ctermbg=0
 highlight MatchParen   cterm=bold      ctermfg=3     ctermbg=0
 highlight OverLength   cterm=none      ctermfg=3     ctermbg=8
 highlight Pmenu                                      ctermbg=8
