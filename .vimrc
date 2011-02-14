@@ -43,8 +43,7 @@ let g:CommandTMatchWindowAtTop=1
 let g:syntastic_auto_loc_list=1
 
 " Colors
-map \c :set t_Co=16<CR>
-set t_Co=256
+set t_Co=16
 colors ir_black
 
 highlight MatchParen   cterm=bold      ctermfg=3     ctermbg=0
