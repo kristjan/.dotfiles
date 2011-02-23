@@ -73,6 +73,7 @@ map <Leader>T :CommandTFlush<CR>
 " Anti-shortcuts
 map <S-k> k<S-j>$
 map <S-y> y$
+map <F1> :echo "F1 is for racing"<CR>
 
 " Remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
