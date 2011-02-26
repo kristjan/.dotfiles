@@ -18,11 +18,13 @@ alias options='vim ~/.bashrc; srcs'
 alias profile='vim ~/.bash_profile; srcs'
 alias notes='vim ~/notes'
 alias :e='vim'
+alias b='bundle exec'
 
 alias synergys='killall synergys; synergys -f --config ~/.synergyrc --daemon'
 alias synergyc='killall synergyc; /usr/bin/synergyc kristjan.corp.causes.com'
 
 alias mig='rake db:migrate && rake db:test:prepare'
+alias vimig='vim db/migrate/$(ls -clrt db/migrate/ | tail -1 | cut -d " " -f 9)'
 
 alias git='git-achievements'
 alias gull='git pull'
@@ -44,10 +46,11 @@ alias sql='mysql -uroot'
 
 alias cdgem='cd /usr/local/lib/ruby/gems/1.8/gems'
 
-alias util='ssh dev@util1'
 alias rmlog='for file in log/*; do cat /dev/null > $file; done'
 alias running='ps aux | grep $1'
 
+alias bobo='ssh caketown.causes.com -p 5600'
+alias util='ssh dev@util1'
 alias sshh='ssh dev@util1 -t "ssh $1"'
 alias sshhr='ssh root@util1 -t "ssh $1"'
 
@@ -59,7 +62,8 @@ alias listmp='find . | ack "(~|\.sw[op])$"'
 alias cleantmp='echo Deleting $(listmp | wc -l ) files && rm $(listmp)'
 alias cleandbg='cat /dev/null > tmp/debug.log'
 alias debug='tail -f tmp/debug.log'
-alias applog='tail -f /var/log/apps.log'
+alias log='tail -f log/development.log'
 
 # Typos
 alias mc='mv'
+alias vi='vim'
