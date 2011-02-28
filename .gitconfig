@@ -1,0 +1,40 @@
+[user]
+  name = Kristján Pétursson
+  email = kristjan@causes.com
+[alias]
+  co = checkout
+  st = status
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative -10
+  last = log -1
+[apply]
+  whitespace = fix
+[color]
+  ui = auto
+[color "branch"]
+  current = green reverse
+  local = green
+  remote = cyan
+[color "diff"]
+  commit = magenta bold
+  frag = cyan
+  meta = bold
+  new = green bold
+  old = red bold
+  whitespace = yellow reverse
+[color "interactive"]
+  prompt = green bold
+  header = cyan
+  help = yellow
+  error = red bold
+[color "status"]
+  changed = yellow
+[github]
+  user = kristjan
+[core]
+  excludesfile = /home/kristjan/.gitignore
+[merge]
+  summary = true
+[achievement]
+  upload = true
+[commit]
+  template = /home/kristjan/.git_commit_msg
