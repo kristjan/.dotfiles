@@ -56,7 +56,6 @@ highlight StatusLine   cterm=bold      ctermfg=7     ctermbg=8
 highlight StatusLineNC cterm=none      ctermfg=0     ctermbg=8
 highlight ToDo         cterm=underline ctermfg=3     ctermbg=none
 
-match Overlength /\%81v.\+/
 
 " Shortcuts
 map \a :Ack
@@ -77,3 +76,4 @@ map <F1> :echo "F1 is for racing"<CR>
 
 " Remove trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
+autocmd WinEnter,BufRead * match OverLength /\%81v.\+/
