@@ -47,7 +47,7 @@ set t_Co=16
 colors ir_black
 
 highlight MatchParen   cterm=bold      ctermfg=1     ctermbg=0
-highlight OverLength   cterm=none      ctermfg=3     ctermbg=8
+highlight OverLength   cterm=none      ctermfg=1     ctermbg=0
 highlight Pmenu                                      ctermbg=8
 highlight PmenuSel     cterm=bold      ctermfg=10    ctermbg=4
 highlight PmenuThumb                   ctermfg=6
