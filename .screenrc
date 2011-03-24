@@ -1,0 +1,27 @@
+deflogin on
+autodetach on
+startup_message off
+maptimeout 5
+
+defshell -bash
+vbell off
+defscrollback 10000
+
+bind k eval "focus up"
+bind j eval "focus down"
+bind h eval "focus left"
+bind l eval "focus right"
+
+split -v
+focus next
+screen
+resize 80
+
+split -h
+focus next
+screen
+
+focus next
+screen
+
+layout save layout
