@@ -15,7 +15,6 @@ bind l eval "focus right"
 split -v
 focus next
 screen
-resize 80
 
 split -h
 focus next
@@ -23,5 +22,6 @@ screen
 
 focus next
 screen
+resize 162
 
 layout save layout
