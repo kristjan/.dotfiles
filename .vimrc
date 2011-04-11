@@ -72,6 +72,10 @@ map <Leader>y :echo system('echo -n '.shellescape(@").' \| npaste')<CR>
 
 map <Leader>T :CommandTFlush<CR>
 
+map <Leader>= :Tabularize /= <CR>
+map <Leader>> :Tabularize /=><CR>
+map <Leader>, :Tabularize /,\zs<CR>
+
 " Anti-shortcuts
 map <S-k> k<S-j>$
 map <S-y> y$
