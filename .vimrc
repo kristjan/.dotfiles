@@ -36,6 +36,7 @@ set laststatus=2
 set mouse=a " On!
 
 " Command-T Options
+let g:CommandTMaxFiles = 30000
 let g:CommandTMaxHeight=10
 let g:CommandTMatchWindowAtTop=1
 
