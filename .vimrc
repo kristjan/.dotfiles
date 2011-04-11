@@ -81,6 +81,6 @@ map <S-k> k<S-j>$
 map <S-y> y$
 map <F1> :echo "F1 is for racing"<CR>
 
-" Remove trailing whitespace
-autocmd BufWritePre * :%s/\s\+$//e
+autocmd VimEnter COMMIT_EDITMSG :call cursor(1,1)
+autocmd BufWritePre * :%s/\s\+$//e " Remove trailing whitespace
 autocmd WinEnter,BufRead * match OverLength /\%81v.\+/
