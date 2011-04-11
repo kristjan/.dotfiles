@@ -68,6 +68,8 @@ map <C-j> <C-w>j
 map <C-l> <C-w>l
 map <C-h> <C-w>h
 
+map <Leader>y :echo system('echo -n '.shellescape(@").' \| npaste')<CR>
+
 map <Leader>T :CommandTFlush<CR>
 
 " Anti-shortcuts
