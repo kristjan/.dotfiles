@@ -6,8 +6,8 @@ syntax on
 filetype plugin indent on
 
 " Mess with .vimrc
-map ,v :sp ~/.vimrc<CR><C-W>_
-map <silent> ,V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
+map <Leader>v :sp ~/.vimrc<CR><C-W>_
+map <silent> <Leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
 
 " Window geometry
 map \w :set lines=86<CR> :set columns=161<CR>
@@ -59,14 +59,18 @@ highlight ToDo         cterm=underline ctermfg=3     ctermbg=none
 
 
 " Shortcuts
-map \a :Ack
-map \A "zyw:exe ":Ack ".@z<CR>
-map \c :ccl<CR>:lcl<CR>
-map \h :nohlsearch<CR>
 map <C-k> <C-w>k
 map <C-j> <C-w>j
 map <C-l> <C-w>l
 map <C-h> <C-w>h
+
+map <Leader>a :Ack
+map <Leader>A "zyw:exe ":Ack ".@z<CR>
+map <Leader>c :ccl<CR>:lcl<CR>
+map <Leader>h :nohlsearch<CR>
+
+map <Leader>p :set invpaste paste?<CR>
+map <Leader>q /^\s*q\W<CR>
 
 map <Leader>y :echo system('echo -n '.shellescape(@").' \| npaste')<CR>
 
