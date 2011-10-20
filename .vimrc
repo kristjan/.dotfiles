@@ -80,6 +80,8 @@ map <Leader>= :Tabularize /= <CR>
 map <Leader>> :Tabularize /=><CR>
 map <Leader>, :Tabularize /,\zs<CR>
 
+nnoremap <Space> :<C-U>call InsertChar#insert(v:count1)<CR>
+
 " Anti-shortcuts
 map <S-k> k<S-j>$
 map <S-y> y$
