@@ -38,7 +38,6 @@ set mouse=a " On!
 " Command-T Options
 let g:CommandTMaxFiles = 30000
 let g:CommandTMaxHeight=10
-let g:CommandTMatchWindowAtTop=1
 
 " Syntastic Options
 let g:syntastic_auto_loc_list=1
