@@ -7,21 +7,25 @@ defshell -bash
 vbell off
 defscrollback 10000
 
+bind = eval "resize +10"
+bind - eval "resize -10"
+
 bind k eval "focus up"
 bind j eval "focus down"
 bind h eval "focus left"
 bind l eval "focus right"
-
-split -v
-focus next
-screen
+bind f eval "fit"
 
 split -h
 focus next
 screen
 
+split -v
 focus next
 screen
-resize 162
+
+focus next
+screen
+resize 75
 
 layout save layout
