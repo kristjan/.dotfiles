@@ -23,7 +23,7 @@ alias b='bundle exec'
 alias synergys='killall synergys; synergys -f --config ~/.synergyrc --daemon'
 alias synergyc='killall synergyc; /usr/bin/synergyc kristjan.corp.causes.com'
 
-alias mig='rake db:migrate && rake db:test:prepare'
+alias mig='b rake db:migrate && b rake db:test:prepare'
 alias vimig='vim db/migrate/$(ls -clrt db/migrate/ | tail -1 | cut -d " " -f 9)'
 
 alias g='git'
@@ -39,6 +39,7 @@ alias gad='git add'
 alias gap='git add --patch'
 
 alias sc='screen'
+alias scx='screen -xR'
 alias sql='mysql -uroot'
 
 alias cdgem='cd /usr/local/lib/ruby/gems/1.8/gems'
@@ -57,8 +58,8 @@ alias resmem='sudo /sbin/service memcached restart'
 
 alias listmp='find . | ack "(~|\.sw[op])$"'
 alias cleantmp='echo Deleting $(listmp | wc -l ) files && rm $(listmp)'
-alias cleandbg='cat /dev/null > tmp/debug.log'
-alias debug='tail -f tmp/debug.log'
+alias cleandbg='cat /dev/null > log/debug.log'
+alias debug='tail -f log/debug.log'
 alias log='tail -f log/development.log'
 
 # Typos
