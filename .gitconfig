@@ -1,6 +1,9 @@
 [user]
   name = Kristján Pétursson
   email = kristjan@causes.com
+[github]
+  user = kristjan
+
 [alias]
   bubble = !sh -c 'git checkout master && git pull && git checkout $1 && git rebase master && git checkout master && git merge --no-ff $1' -
   br = branch
@@ -18,6 +21,7 @@
 
 [apply]
   whitespace = fix
+
 [color]
   ui = auto
 [color "branch"]
@@ -38,13 +42,19 @@
   error = red bold
 [color "status"]
   changed = yellow
-[github]
-  user = kristjan
+
 [core]
   excludesfile = /home/kristjan/.gitignore
+
+[help]
+  autocorrect = 10
+
 [merge]
   summary = true
 [achievement]
   upload = true
-[commit]
-  template = /home/kristjan/.git_commit_msg
+
+[push]
+	default = upstream
+[rerere]
+	enabled = 1
