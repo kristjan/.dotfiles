@@ -51,8 +51,6 @@
 
 [merge]
   summary = true
-[achievement]
-  upload = true
 
 [push]
 	default = upstream
