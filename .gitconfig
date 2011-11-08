@@ -50,7 +50,7 @@
   autocorrect = 10
 
 [merge]
-  summary = true
+  log = 100
 
 [push]
   default = upstream
