@@ -45,6 +45,7 @@
 
 [core]
   excludesfile = /home/kristjan/.gitignore
+  editor = /usr/bin/vim
 
 [help]
   autocorrect = 10
@@ -53,7 +54,7 @@
   log = 100
 
 [push]
-  default = upstream
+  default = tracking
 
 [rerere]
   enabled = 1
