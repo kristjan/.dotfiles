@@ -1,6 +1,6 @@
 [user]
   name = Kristján Pétursson
-  email = kristjan@causes.com
+  email = kristjan@gmail.com
 [github]
   user = kristjan
 
@@ -44,8 +44,8 @@
   changed = yellow
 
 [core]
-  excludesfile = /home/kristjan/.gitignore
-  editor = /usr/bin/vim
+  excludesfile = ~/.gitignore
+  editor = vim
 
 [help]
   autocorrect = 10
