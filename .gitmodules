@@ -79,6 +79,6 @@
 [submodule "bundle/vim-easymotion"]
 	path = bundle/vim-easymotion
 	url = git://github.com/Lokaltog/vim-easymotion.git
-[submodule "bundle/jslint.vim"]
-	path = bundle/jslint.vim
-	url = git://github.com/hallettj/jslint.vim.git
+[submodule "bundle/jshint.vim"]
+	path = bundle/jshint.vim
+	url = git://github.com/walm/jshint.vim.git
