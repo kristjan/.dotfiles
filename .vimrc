@@ -29,6 +29,7 @@ set textwidth=80
 set ignorecase
 set smartcase " Case sensitive if you type an uppercase letter
 set incsearch
+set hlsearch
 
 " UI
 set wildmenu
@@ -48,7 +49,6 @@ let $JS_CMD = 'node'
 let g:syntastic_auto_loc_list=1
 
 " Colors
-set t_Co=16
 colors ir_black
 
 highlight MatchParen   cterm=bold      ctermfg=1     ctermbg=0
@@ -71,16 +71,17 @@ map <C-h> <C-w>h
 map <Leader>a :Ack
 map <Leader>A "zyw:exe ":Ack ".@z<CR>
 map <Leader>c :ccl<CR>:lcl<CR>
-map <Leader>h :nohlsearch<CR>
+map <silent> <Leader>h :nohlsearch<CR>
+map <Leader>j :JSHint % --laxcomma<CR>
 
 map <Leader>p :set invpaste paste?<CR>
 map <Leader>q /^\s*q\W<CR>
 
-map <Leader>y :echo system('echo -n '.shellescape(@").' \| npaste')<CR>
+map <Leader>y "*y
 
 map <Leader>T :CommandTFlush<CR>
 
-map <Leader>= :Tabularize /= <CR>
+map <Leader>= :Tabularize /=<CR>
 map <Leader>> :Tabularize /=><CR>
 map <Leader>, :Tabularize /,\zs<CR>
 
@@ -90,6 +91,9 @@ nnoremap <Space> :<C-U>call InsertChar#insert(v:count1)<CR>
 map <S-k> k<S-j>$
 map <S-y> y$
 map <F1> :echo "F1 is for racing"<CR>
+
+" Filetype-specific whitespace
+autocmd Filetype javascript setlocal tabstop=4 shiftwidth=4
 
 autocmd VimEnter COMMIT_EDITMSG :call cursor(1,1)
 autocmd BufWritePre * :%s/\s\+$//e " Remove trailing whitespace
