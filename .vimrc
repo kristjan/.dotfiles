@@ -92,6 +92,9 @@ map <S-k> k<S-j>$
 map <S-y> y$
 map <F1> :echo "F1 is for racing"<CR>
 
+" Treat EJS as JST
+autocmd BufNewFile,BufRead *.ejs set filetype=jst
+
 " Filetype-specific whitespace
 autocmd Filetype javascript setlocal tabstop=4 shiftwidth=4
 
