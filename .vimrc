@@ -95,9 +95,6 @@ map <F1> :echo "F1 is for racing"<CR>
 " Treat EJS as JST
 autocmd BufNewFile,BufRead *.ejs set filetype=jst
 
-" Filetype-specific whitespace
-autocmd Filetype javascript setlocal tabstop=4 shiftwidth=4
-
 autocmd VimEnter COMMIT_EDITMSG :call cursor(1,1)
 autocmd BufWritePre * :%s/\s\+$//e " Remove trailing whitespace
 autocmd WinEnter,BufRead * match OverLength /\%81v.\+/
