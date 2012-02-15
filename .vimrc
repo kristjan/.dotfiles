@@ -42,6 +42,9 @@ set mouse=a " On!
 let g:CommandTMaxFiles = 30000
 let g:CommandTMaxHeight=10
 
+" Gist options
+let g:gist_clip_command = 'pbcopy'
+
 " JSLint Options
 let $JS_CMD = 'node'
 
