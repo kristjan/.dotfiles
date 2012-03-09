@@ -10,13 +10,14 @@
   changes = !sh -c 'git diff --stat $1 | tail -1' -
   cm = checkout master
   co = checkout
+  conflicts = !vim $(git status | fgrep modified | cut -d: -f2)
   cur = name-rev --name-only HEAD
-  fester = !git fetch && git reset --hard origin/master
+  form = !git fetch origin && git rebase origin/master
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   last = log -1
   remaster = rebase origin/master
   st = status
-  sub = submodule update --init
+  sub = !cd $(git rev-parse --show-toplevel) && git submodule update --init | fgrep -v registered
   v = rev-parse HEAD
 
 [apply]
