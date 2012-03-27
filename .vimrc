@@ -36,7 +36,7 @@ set wildmenu
 set statusline=%f%m%r%h%w\ %Y\ %03l/%03L\ %02v\ %=\ %n\ "
 set statusline+=
 set laststatus=2
-set mouse=a " On!
+set mouse= " Off!
 
 " Command-T Options
 let g:CommandTMaxFiles = 30000
