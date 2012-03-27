@@ -75,6 +75,7 @@ map <Leader>a :Ack
 map <Leader>A "zyw:exe ":Ack ".@z<CR>
 map <Leader>c :ccl<CR>:lcl<CR>
 map <silent> <Leader>h :nohlsearch<CR>
+map <Leader>d :DateFromLongEpoch<CR>
 map <Leader>j :JSHint % --laxcomma<CR>
 
 map <Leader>p :set invpaste paste?<CR>
