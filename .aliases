@@ -26,8 +26,8 @@ alias synergyc='killall synergyc; /usr/bin/synergyc kristjan.corp.causes.com'
 alias mig='b rake db:migrate && b rake db:test:prepare'
 alias vimig='vim db/migrate/$(ls -clrt db/migrate/ | tail -1 | cut -d " " -f 9)'
 
-if [ -f /usr/local/bin/hub ]; then
-  alias git='/usr/local/bin/hub'
+if [ -f `which hub` ]; then
+  alias git=`which hub`
 fi
 alias g='git'
 alias gst='git status'
