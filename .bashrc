@@ -2,7 +2,6 @@ HELPERS="
   .aliases
   .functions
   .nvm/nvm.sh
-  src/autojump/autojump.bash
 "
 
 for helper in $HELPERS; do
@@ -14,6 +13,10 @@ done
 if [ -f ~/bin/git-completion.bash ]; then
   . ~/bin/git-completion.bash
   PS1='\W$(__git_ps1 "(%s)")\$ '
+fi
+
+if [ -f `brew --prefix`/etc/autojump ]; then
+  . `brew --prefix`/etc/autojump
 fi
 
 set -o vi
