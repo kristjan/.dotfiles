@@ -1,0 +1,11 @@
+--pager=less -FRSX
+--smart-case
+--type-set=ejs=.ejs
+--type-set=less=.less
+--type-set=json=.json
+--type-set=puppet=.pp
+--type-set=conf=.conf
+--type-set=markdown=.md,.markdown
+--ignore-dir=node_modules
+--ignore-dir=Me
+--ignore-dir=Data
