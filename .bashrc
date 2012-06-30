@@ -1,4 +1,5 @@
 HELPERS="
+  Dropbox/.env
   .aliases
   .functions
   .nvm/nvm.sh

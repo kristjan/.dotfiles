@@ -3,7 +3,7 @@
   email = kristjan@gmail.com
 [github]
   user = kristjan
-
+  token = $GITHUB_TOKEN
 [alias]
   bubble = !sh -c 'git checkout master && git pull && git checkout $1 && git rebase master && git checkout master && git merge --no-ff $1' -
   br = branch
