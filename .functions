@@ -2,3 +2,9 @@ function bobblecp() {
   echo scp "$BOBBLE_HOST:$1" "$2"
   scp "$BOBBLE_HOST:$1" "$2"
 }
+
+function loadenv() {
+  for line in $(cat .env); do
+    export $line
+  done
+}
