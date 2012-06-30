@@ -1,6 +1,8 @@
 alias ..='cd ..'
 alias srcs='. ~/.bashrc'
 
+alias bobble='ssh $BOBBLE_HOST'
+
 alias a='echo á'
 alias kristjan='echo Kristj$(a)n'
 alias e='echo é'

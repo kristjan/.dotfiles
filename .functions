@@ -1,0 +1,4 @@
+function bobblecp() {
+  echo scp "$BOBBLE_HOST:$1" "$2"
+  scp "$BOBBLE_HOST:$1" "$2"
+}
