@@ -11,8 +11,8 @@ for helper in $HELPERS; do
   fi
 done
 
-if [ -f ~/bin/git-completion.bash ]; then
-  . ~/bin/git-completion.bash
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
   PS1='\W$(__git_ps1 "(%s)")\$ '
 fi
 
