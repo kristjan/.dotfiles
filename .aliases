@@ -32,6 +32,9 @@ if [ -f `which hub` ]; then
   alias git=`which hub`
 fi
 alias g='git'
+if [ `type -t __git_complete`"" == "function" ]; then
+  __git_complete g __git_main
+fi
 alias gst='git status'
 alias gull='git pull'
 alias gush='git push'
