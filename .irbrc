@@ -28,9 +28,6 @@ require 'ap' # awesome_print
 require 'bond'
 Bond.start
 
-require 'boson'
-Boson.start
-
 require 'hirb'
 Hirb::View.enable
 extend Hirb::Console
