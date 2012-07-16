@@ -20,4 +20,8 @@ if [ -f `brew --prefix`/etc/autojump ]; then
   . `brew --prefix`/etc/autojump
 fi
 
+if [ `type -t __git_complete`"" == "function" ]; then
+  __git_complete g __git_main
+fi
+
 set -o vi

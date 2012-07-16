@@ -29,9 +29,6 @@ alias mig='b rake db:migrate && b rake db:test:prepare'
 alias vimig='vim db/migrate/$(ls -clrt db/migrate/ | tail -1 | cut -d " " -f 9)'
 
 alias g='git'
-if [ `type -t __git_complete`"" == "function" ]; then
-  __git_complete g __git_main
-fi
 if [ -f `which hub` ]; then
   alias h=`which hub`
 fi
