@@ -4,6 +4,7 @@
 [github]
   user = kristjan
   token = $GITHUB_TOKEN
+
 [alias]
   bubble = !sh -c 'git checkout master && git pull && git checkout $1 && git rebase master && git checkout master && git merge --no-ff $1' -
   br = branch
@@ -49,7 +50,7 @@
   editor = vim
 
 [help]
-  autocorrect = 10
+  autocorrect = 5
 
 [merge]
   log = 100
