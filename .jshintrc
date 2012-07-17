@@ -3,10 +3,10 @@
   "eqeqeq"   : true,
   "latedef"  : true,
   "noempty"  : true,
-  "regexp"   : true,
-  "undef"    : true,
   "nonew"    : true,
+  "regexp"   : true,
   "trailing" : true,
+  "undef"    : true,
 
   "predef": [
     "console",
