@@ -4,7 +4,6 @@
   "latedef"  : true,
   "noempty"  : true,
   "nonew"    : true,
-  "regexp"   : true,
   "trailing" : true,
   "undef"    : true,
 
