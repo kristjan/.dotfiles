@@ -9,6 +9,11 @@ set nocompatible
 
 set fileformat=unix
 
+" Colors
+colors ir_black
+
+set t_ti= t_te=
+
 " Mess with .vimrc
 map <Leader>v :sp ~/.vimrc<CR><C-W>_
 map <silent> <Leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
@@ -52,9 +57,6 @@ let $JS_CMD = 'node'
 
 " Syntastic Options
 let g:syntastic_auto_loc_list=1
-
-" Colors
-colors ir_black
 
 highlight MatchParen   cterm=bold      ctermfg=1     ctermbg=0
 highlight OverLength   cterm=none      ctermfg=1     ctermbg=0
