@@ -31,6 +31,7 @@ set shiftwidth=2
 set smarttab
 set expandtab
 set textwidth=80
+set colorcolumn=+1
 
 " Search
 set ignorecase
@@ -67,6 +68,7 @@ highlight Search       cterm=none      ctermfg=0     ctermbg=3
 highlight StatusLine   cterm=bold      ctermfg=7     ctermbg=8
 highlight StatusLineNC cterm=none      ctermfg=0     ctermbg=8
 highlight ToDo         cterm=underline ctermfg=3     ctermbg=none
+highlight ColorColumn  cterm=none      ctermfg=1     ctermbg=233
 
 
 " Shortcuts
