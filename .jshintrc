@@ -1,0 +1,25 @@
+{
+  "bitwise"  : true,
+  "eqeqeq"   : true,
+  "latedef"  : true,
+  "noempty"  : true,
+  "regexp"   : true,
+  "undef"    : true,
+  "nonew"    : true,
+  "trailing" : true,
+
+  "predef": [
+    "console",
+    "exports",
+    "require",
+
+    "__dirname",
+
+    "describe",
+    "before",
+    "beforeEach",
+    "afterEach",
+    "after",
+    "it"
+  ]
+}
