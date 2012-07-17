@@ -78,7 +78,6 @@ map <Leader>A "zyw:exe ":Ack ".@z<CR>
 map <Leader>c :ccl<CR>:lcl<CR>
 map <silent> <Leader>h :nohlsearch<CR>
 map <Leader>d :DateFromLongEpoch<CR>
-map <Leader>j :JSHint % --laxcomma<CR>
 
 map <Leader>p :set invpaste paste?<CR>
 map <Leader>q /^\s*q\W<CR>
@@ -106,4 +105,3 @@ autocmd BufNewFile,BufRead *.ejs set filetype=jst
 autocmd VimEnter COMMIT_EDITMSG :call cursor(1,1)
 autocmd BufWritePre * :%s/\s\+$//e " Remove trailing whitespace
 autocmd WinEnter,BufRead * match OverLength /\%81v.\+/
-autocmd VimLeave * !clear
