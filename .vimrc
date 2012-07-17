@@ -5,6 +5,8 @@ call pathogen#runtime_append_all_bundles()
 syntax on
 filetype plugin indent on
 
+set nocompatible
+
 set fileformat=unix
 
 " Mess with .vimrc
@@ -39,7 +41,7 @@ set laststatus=2
 set mouse= " Off!
 
 " Command-T Options
-let g:CommandTMaxFiles = 30000
+let g:CommandTMaxFiles=30000
 let g:CommandTMaxHeight=10
 
 " Gist options
