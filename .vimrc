@@ -83,6 +83,8 @@ map <Leader>j :JSHint % --laxcomma<CR>
 map <Leader>p :set invpaste paste?<CR>
 map <Leader>q /^\s*q\W<CR>
 
+map <Leader>r :redraw!<CR>
+
 map <Leader>y "*y
 
 map <Leader>T :CommandTFlush<CR>
