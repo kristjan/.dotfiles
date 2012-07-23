@@ -10,9 +10,15 @@
   "predef": [
     "console",
     "exports",
+    "process",
     "require",
 
     "__dirname",
+
+    "clearTimeout",
+    "setTimeout",
+
+    "should",
 
     "describe",
     "before",
