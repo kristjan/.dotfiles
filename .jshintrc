@@ -21,10 +21,12 @@
     "should",
 
     "describe",
+    "xdescribe",
     "before",
     "beforeEach",
     "afterEach",
     "after",
-    "it"
+    "it",
+    "xit"
   ]
 }
