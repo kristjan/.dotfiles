@@ -25,9 +25,6 @@
 [submodule ".vim/bundle/vim-rails"]
 	path = .vim/bundle/vim-rails
 	url = git://github.com/tpope/vim-rails.git
-[submodule ".vim/bundle/vim-markdown"]
-	path = .vim/bundle/vim-markdown
-	url = git://github.com/tpope/vim-markdown.git
 [submodule ".vim/bundle/vim-fugitive"]
 	path = .vim/bundle/vim-fugitive
 	url = git://github.com/tpope/vim-fugitive.git
@@ -61,9 +58,6 @@
 [submodule ".vim/bundle/supertab"]
 	path = .vim/bundle/supertab
 	url = git://github.com/ervandew/supertab.git
-[submodule ".vim/bundle/vim-preview"]
-	path = .vim/bundle/vim-preview
-	url = git://github.com/greyblake/vim-preview.git
 [submodule ".vim/bundle/scss-syntax.vim"]
 	path = .vim/bundle/scss-syntax.vim
 	url = git://github.com/cakebaker/scss-syntax.vim.git
