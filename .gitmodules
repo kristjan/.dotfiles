@@ -85,3 +85,6 @@
 [submodule ".vim/bundle/vim-human-dates"]
 	path = .vim/bundle/vim-human-dates
 	url = git://github.com/kristjan/vim-human-dates.git
+[submodule ".vim/bundle/vim-instant-markdown"]
+	path = .vim/bundle/vim-instant-markdown
+	url = git://github.com/suan/vim-instant-markdown.git
