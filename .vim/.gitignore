@@ -3,3 +3,4 @@
 *.log
 ruby/command-t/Makefile
 ruby/command-t/ext.bundle
+.netrwhist
