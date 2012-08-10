@@ -28,6 +28,10 @@
     "afterEach",
     "after",
     "it",
-    "xit"
+    "xit",
+
+    "$",
+    "Singly",
+    "Stripe"
   ]
 }
