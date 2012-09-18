@@ -32,6 +32,7 @@
 
     "$",
     "Singly",
-    "Stripe"
+    "Stripe",
+    "mixpanel"
   ]
 }
