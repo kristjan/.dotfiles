@@ -18,6 +18,7 @@
 
     "clearTimeout",
     "setTimeout",
+    "setInterval",
 
     "should",
 
