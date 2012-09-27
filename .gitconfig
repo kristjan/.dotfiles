@@ -63,3 +63,5 @@
 
 [branch "master"]
 	rebase = true
+[credential]
+	helper = osxkeychain
