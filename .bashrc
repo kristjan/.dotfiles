@@ -1,3 +1,5 @@
+export EDITOR=vim
+
 HELPERS="
   Dropbox/.env
   .aliases
