@@ -7,6 +7,11 @@ filetype plugin indent on
 
 set nocompatible
 
+if $VIM_CRONTAB == "true"
+  set nobackup
+  set nowritebackup
+endif
+
 set fileformat=unix
 
 " Colors
