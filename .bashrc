@@ -1,4 +1,5 @@
 export EDITOR=vim
+export HISTCONTROL=ignorespace
 
 HELPERS="
   Dropbox/.env
