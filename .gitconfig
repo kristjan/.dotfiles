@@ -57,12 +57,13 @@
   log = 100
 
 [push]
-  default = tracking
+  default = simple
 
 [rerere]
   enabled = 1
 
 [branch "master"]
 	rebase = true
+
 [credential]
 	helper = osxkeychain
