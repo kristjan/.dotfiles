@@ -63,6 +63,7 @@ let $JS_CMD = 'node'
 
 " Syntastic Options
 let g:syntastic_auto_loc_list=1
+let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['cpp'] }
 
 highlight MatchParen   cterm=bold      ctermfg=1     ctermbg=0
 highlight OverLength   cterm=none      ctermfg=1     ctermbg=0
