@@ -1,11 +1,12 @@
 {
   "bitwise"  : true,
   "eqeqeq"   : true,
-  "latedef"  : true,
   "noempty"  : true,
   "nonew"    : true,
   "trailing" : true,
   "undef"    : true,
+
+  "latedef"  : false,
 
   "predef": [
     "console",
