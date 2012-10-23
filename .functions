@@ -16,4 +16,7 @@ function loadenv() {
     echo No file $env
   fi
 }
+
+function urlencode() {
+  perl -MURI::Escape -e "print uri_escape('$1');"
 }
