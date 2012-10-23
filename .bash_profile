@@ -2,6 +2,9 @@ export PATH=/usr/local/bin:$PATH:/Users/kristjan/lib/android/tools:/Users/kristj
 
 [[ -s "/Users/kristjan/.rvm/scripts/rvm" ]] && source "/Users/kristjan/.rvm/scripts/rvm"
 
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
