@@ -14,6 +14,7 @@
   conflicts = !vim $(git status | fgrep modified | cut -d: -f2)
   cur = name-rev --name-only HEAD
   form = !git fetch origin && git rebase origin/master
+  fix  = commit -m "Fixup"
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   last = log -1
   remaster = rebase origin/master
