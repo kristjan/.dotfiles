@@ -79,7 +79,6 @@ highlight ColorColumn  cterm=none      ctermfg=1     ctermbg=233
 
 " Shortcuts
 imap jk <ESC>
-imap :w <ESC>:w<CR>
 
 map <C-k> <C-w>k
 map <C-j> <C-w>j
