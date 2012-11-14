@@ -35,6 +35,7 @@
     "xit",
 
     "$",
+    "Buffer",
     "Singly",
     "Stripe",
     "mixpanel"
