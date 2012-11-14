@@ -14,20 +14,6 @@
   "latedef"  : false,
 
   "predef": [
-    "console",
-    "exports",
-    "module",
-    "process",
-    "require",
-
-    "__dirname",
-
-    "clearTimeout",
-    "document",
-    "setTimeout",
-    "setInterval",
-    "clearInterval",
-
     "should",
 
     "describe",
@@ -40,7 +26,6 @@
     "xit",
 
     "$",
-    "Buffer",
     "Singly",
     "Stripe",
     "mixpanel"
