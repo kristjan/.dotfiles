@@ -1,6 +1,7 @@
 {
   "node"     : true,
   "browser"  : true,
+  "jquery"   : true,
 
   "strict"   : false,
 
@@ -25,7 +26,6 @@
     "it",
     "xit",
 
-    "$",
     "Singly",
     "Stripe",
     "mixpanel"
