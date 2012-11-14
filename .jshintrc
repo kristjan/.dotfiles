@@ -1,6 +1,9 @@
 {
   "node"     : true,
+  "browser"  : true,
+
   "strict"   : false,
+
   "bitwise"  : true,
   "eqeqeq"   : true,
   "noempty"  : true,
