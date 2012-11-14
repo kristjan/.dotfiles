@@ -100,6 +100,9 @@ map <Leader>y "*y
 
 map <Leader>T :CommandTFlush<CR>
 
+map <Leader>f :lfirst<CR>
+map <Leader>n :lnext<CR>
+
 map <Leader>= :Tabularize /=<CR>
 map <Leader>> :Tabularize /=><CR>
 map <Leader>, :Tabularize /,\zs<CR>
