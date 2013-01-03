@@ -106,6 +106,7 @@ map <Leader>n :lnext<CR>
 map <Leader>= :Tabularize /=<CR>
 map <Leader>> :Tabularize /=><CR>
 map <Leader>, :Tabularize /,\zs<CR>
+map <Leader>: :Tabularize /:<CR>
 
 nnoremap <Space> :<C-U>call InsertChar#insert(v:count1)<CR>
 
