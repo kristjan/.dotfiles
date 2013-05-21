@@ -29,7 +29,7 @@ alias b='bundle exec'
 alias synergys='killall synergys; synergys -f --config ~/.synergyrc --daemon'
 alias synergyc='killall synergyc; /usr/bin/synergyc kristjan.corp.causes.com'
 
-alias mig='b rake db:migrate && b rake db:test:prepare'
+alias mig='b rake db:migrate'
 alias vimig='vim db/migrate/$(ls -clrt db/migrate/ | tail -1 | cut -d " " -f 9)'
 
 alias g='git'
