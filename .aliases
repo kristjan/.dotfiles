@@ -49,6 +49,8 @@ alias gad='git add'
 alias gap='git add --patch'
 alias goot='cd $(git rev-parse --show-toplevel)'
 
+alias her='~/src/vb/scripts/bin/h'
+
 alias and='ant debug && adb install -r `ls bin/*-debug.apk`'
 alias sc='screen'
 alias scx='screen -xR'
