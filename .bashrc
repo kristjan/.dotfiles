@@ -1,3 +1,5 @@
+stty stop ""
+
 export EDITOR=vim
 export HISTCONTROL=ignorespace
 
