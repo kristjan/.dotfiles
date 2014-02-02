@@ -7,5 +7,5 @@
 --type-set=conf=.conf
 --type-set=markdown=.md,.markdown
 --ignore-dir=node_modules
---ignore-dir=Me
---ignore-dir=Data
+--ignore-dir=Data*
+--ignore-dir=path
