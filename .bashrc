@@ -2,6 +2,7 @@ stty stop ""
 
 export EDITOR=vim
 export HISTCONTROL=ignorespace
+export JAVAHOME=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home
 export AWS_CREDENTIAL_FILE=~/.aws.cfg
 
 set -o vi
