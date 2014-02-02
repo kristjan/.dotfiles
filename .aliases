@@ -49,14 +49,12 @@ alias gad='git add'
 alias gap='git add --patch'
 alias goot='cd $(git rev-parse --show-toplevel)'
 
-alias her='~/src/vb/scripts/bin/h'
-
 alias and='ant debug && adb install -r `ls bin/*-debug.apk`'
 alias sc='screen'
 alias scx='screen -xR'
 alias sql='mysql -uroot'
 
-alias cdgem='cd /usr/local/lib/ruby/gems/1.8/gems'
+alias cdgem='cd `ruby -e "puts Gem.path" | head -1`/gems'
 
 alias rmlog='for file in log/*; do cat /dev/null > $file; done'
 alias running='ps aux | grep $1'
@@ -70,6 +68,12 @@ alias cleantmp='echo Deleting $(listmp | wc -l ) files && rm $(listmp)'
 alias cleandbg='cat /dev/null > log/debug.log'
 alias debug='tail -f log/debug.log'
 alias log='tail -f log/development.log'
+
+# Apartment List
+alias cleandata='rm -rf Data-* pull'
+alias format='xmllint --format'
+alias her='~/src/vb/h/bin/h'
+alias plink='rm -f pull; ln -sF `ls -ld Data-* | rev | cut -d" " -f1 | rev | sort | tail -1` pull; ls -ld pull'
 
 # Typos
 alias mc='mv'
