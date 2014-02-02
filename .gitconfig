@@ -69,10 +69,12 @@
   enabled = 1
 
 [branch]
-	autosetuprebase = always
+	autosetuprebase = remote
 
 [branch "master"]
 	rebase = true
 
 [credential]
 	helper = osxkeychain
+[rebase]
+	autosquash = true
