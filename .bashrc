@@ -3,6 +3,8 @@ stty stop ""
 export EDITOR=vim
 export HISTCONTROL=ignorespace
 
+set -o vi
+
 HELPERS="
   Dropbox/.env
   .aliases
@@ -29,4 +31,4 @@ if [ `type -t __git_complete`"" == "function" ]; then
   __git_complete g __git_main
 fi
 
-set -o vi
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
