@@ -8,6 +8,7 @@
 [alias]
   bubble = !sh -c 'git checkout master && git pull && git checkout $1 && git rebase master && git checkout master && git merge --no-ff $1' -
   br = branch
+  bush = !git push -u origin `git symbolic-ref --short HEAD`
   changes = !sh -c 'git diff --stat $1 | tail -1' -
   cd = checkout dev
   cm = checkout master
@@ -17,10 +18,12 @@
   deploy = push heroku master
   form = !git fetch origin && git rebase origin/master
   fix  = commit -m "Fixup"
+  horse-around = push production stable:master
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   last = log -1
   pr = !hub pull-request -b apartmentlist:dev
   remaster = rebase origin/master
+  rev = rebase origin/dev
   st = status
   sub = !cd $(git rev-parse --show-toplevel) && git submodule update --init | fgrep -v registered
   v = rev-parse HEAD
