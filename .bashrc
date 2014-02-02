@@ -2,6 +2,7 @@ stty stop ""
 
 export EDITOR=vim
 export HISTCONTROL=ignorespace
+export AWS_CREDENTIAL_FILE=~/.aws.cfg
 
 set -o vi
 
