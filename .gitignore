@@ -5,3 +5,8 @@ tmp/*
 \#*#
 .env
 .DS_Store
+config/environments/kristjan*.rb
+TAGS
+slurper_config.yml
+path/
+.rspec-local
