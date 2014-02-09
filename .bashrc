@@ -25,8 +25,8 @@ if [ -f `brew --prefix`/etc/bash_completion ]; then
   PS1='\W$(__git_ps1 "(%s)")\$ '
 fi
 
-if [ -f `brew --prefix`/etc/autojump ]; then
-  . `brew --prefix`/etc/autojump
+if [ -f `brew --prefix`/etc/autojump.bash ]; then
+  . `brew --prefix`/etc/autojump.bash
 fi
 
 if [ `type -t __git_complete`"" == "function" ]; then
