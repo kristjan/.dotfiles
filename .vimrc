@@ -127,3 +127,4 @@ autocmd BufNewFile,BufRead COMMIT_EDITMSG set textwidth=72
 autocmd VimEnter COMMIT_EDITMSG :call cursor(1,1)
 autocmd BufWritePre * :%s/\s\+$//e " Remove trailing whitespace
 autocmd WinEnter,BufRead * match OverLength /\%81v.\+/
+autocmd BufEnter diary.wiki :VimwikiDiaryGenerateLinks
