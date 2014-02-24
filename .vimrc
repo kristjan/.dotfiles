@@ -108,6 +108,9 @@ map <Leader>> :Tabularize /=><CR>
 map <Leader>, :Tabularize /,\zs<CR>
 map <Leader>: :Tabularize /:<CR>
 
+map <Leader>wp :VimwikiDiaryPrevDay<CR>
+map <Leader>wn :VimwikiDiaryNextDay<CR>
+
 nnoremap <Space> :<C-U>call InsertChar#insert(v:count1)<CR>
 
 " Anti-shortcuts
