@@ -11,7 +11,6 @@ HELPERS="
   Dropbox/.env
   .aliases
   .functions
-  .nvm/nvm.sh
 "
 
 for helper in $HELPERS; do
