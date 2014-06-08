@@ -10,3 +10,4 @@ TAGS
 slurper_config.yml
 path/
 .rspec-local
+.jshintrc

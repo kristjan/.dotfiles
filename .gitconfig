@@ -19,12 +19,12 @@
   form = !git fetch origin && git rebase origin/master
   fix  = commit -m "Fixup"
   horse-around = push production stable:master
-  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   last = log -1
-  pr = !hub pull-request -b apartmentlist:dev
+  pr = !hub pull-request
   remaster = rebase origin/master
   rev = rebase origin/dev
-  st = status
+  st = status -sb
   sub = !cd $(git rev-parse --show-toplevel) && git submodule update --init | fgrep -v registered
   v = rev-parse HEAD
 

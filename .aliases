@@ -37,7 +37,7 @@ alias g='git'
 if [ -f `which hub` ]; then
   alias h=`which hub`
 fi
-alias gst='git status'
+alias gst='git st'
 alias gull='git pull'
 alias gush='git push'
 alias gulsh='gull && gush'
