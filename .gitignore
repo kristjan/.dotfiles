@@ -11,3 +11,5 @@ slurper_config.yml
 path/
 .rspec-local
 .jshintrc
+node_modules
+.sass-cache
