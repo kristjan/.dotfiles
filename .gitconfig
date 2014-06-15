@@ -78,3 +78,5 @@
 	helper = osxkeychain
 [rebase]
 	autosquash = true
+[remote "origin"]
+	prune = true
