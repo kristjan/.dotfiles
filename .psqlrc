@@ -3,8 +3,8 @@
 -- Display timing info
 \timing
 
--- Display nulls as NULL to distinguish from an empty string
-\pset null NULL
+-- Display nulls as ∅ to distinguish from an empty string
+\pset null ∅
 
 \set HISTCONTROL ignoredups
 \set HISTSIZE 1000
