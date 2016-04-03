@@ -32,7 +32,5 @@ if [ `type -t __git_complete`"" == "function" ]; then
   __git_complete g __git_main
 fi
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
 # added by travis gem
 [ -f /Users/kristjan/.travis/travis.sh ] && source /Users/kristjan/.travis/travis.sh
