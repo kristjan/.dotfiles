@@ -14,6 +14,13 @@ endif
 
 set fileformat=unix
 
+function! TrimSpace()
+    let save_cursor = getpos(".")
+    :silent! %s/\s\+$//e          " Trailing whitespace
+    :silent! %s/\($\n\s*\)\+\%$// " Blank lines at end
+    call setpos('.', save_cursor)
+endfunction
+
 " Colors
 colors ir_black
 
@@ -130,8 +137,10 @@ autocmd BufNewFile,BufRead *.md,*.markdown set filetype=markdown
 
 " 72-wide lines in commit messages
 autocmd BufNewFile,BufRead COMMIT_EDITMSG set textwidth=72
+autocmd BufNewFile,BufRead GITCOMMIT set textwidth=72
+autocmd BufNewFile,BufRead HAML set textwidth=120
 
 autocmd VimEnter COMMIT_EDITMSG :call cursor(1,1)
-autocmd BufWritePre * :%s/\s\+$//e " Remove trailing whitespace
+au BufWritePre * call TrimSpace()
 autocmd WinEnter,BufRead * match OverLength /\%81v.\+/
 autocmd BufEnter diary.wiki :VimwikiDiaryGenerateLinks
