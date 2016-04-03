@@ -51,6 +51,9 @@ set statusline+=
 set laststatus=2
 set mouse= " Off!
 
+" Blockle options
+let g:blockle_mapping = '<Leader>d'
+
 " Command-T Options
 let g:CommandTMaxFiles=30000
 let g:CommandTMaxHeight=10
