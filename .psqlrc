@@ -6,6 +6,9 @@
 -- Display nulls as ∅ to distinguish from an empty string
 \pset null ∅
 
+-- Print vertically when horizontal is too wide
+\x auto
+
 \set HISTCONTROL ignoredups
 \set HISTSIZE 1000
 
