@@ -55,6 +55,8 @@ load_gem 'awesome_print' do
   AwesomePrint.irb!
 end
 
+load_gem 'clipboard'
+
 load_gem 'hirb' do
   Hirb::View.enable
   extend Hirb::Console
