@@ -1,0 +1,3 @@
+bind -v                      # VI-mode
+bind "^R" em-inc-search-prev # Reverse search
+bind \\t rl_complete         # Maintain tab completion
