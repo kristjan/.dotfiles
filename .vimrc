@@ -90,8 +90,6 @@ highlight ColorColumn  cterm=none      ctermfg=1     ctermbg=233
 
 
 " Shortcuts
-imap jk <ESC>
-
 map <C-k> <C-w>k
 map <C-j> <C-w>j
 map <C-l> <C-w>l
