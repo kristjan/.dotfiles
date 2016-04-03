@@ -13,3 +13,5 @@
 -- -... ;
 \set PROMPT1 '%m:%/%#%R '
 \set PROMPT2 '%R... '
+
+\set HISTFILE ~/.psql_history_ :DBNAME
