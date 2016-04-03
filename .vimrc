@@ -117,8 +117,9 @@ map <Leader>n :lnext<CR>
 
 map <Leader>= :Tabularize /=<CR>
 map <Leader>> :Tabularize /=><CR>
-map <Leader>, :Tabularize /,\zs<CR>
-map <Leader>: :Tabularize /:<CR>
+map <Leader>, :Tabularize /^[^,]*,<CR>
+map <Leader>: :Tabularize /^[^:]*:<CR>
+map <Leader>{ :Tabularize /^[^{]*\zs{<CR>
 
 map <Leader>wp :VimwikiDiaryPrevDay<CR>
 map <Leader>wn :VimwikiDiaryNextDay<CR>
