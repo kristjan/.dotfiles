@@ -107,6 +107,9 @@ map <Leader>q /^\s*q\W<CR>
 map <Leader>r :redraw!<CR>
 
 map <Leader>y "*y
+map <Leader>P "*p
+map <Leader>Y ggVG"*y
+
 
 map <Leader>T :CommandTFlush<CR>
 
