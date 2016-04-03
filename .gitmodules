@@ -103,6 +103,9 @@
 [submodule ".vim/bundle/vim-blockle"]
 	path = .vim/bundle/vim-blockle
 	url = https://github.com/jgdavey/vim-blockle.git
+[submodule ".vim/bundle/vim-indent-guides"]
+	path = .vim/bundle/vim-indent-guides
+	url = git://github.com/nathanaelkane/vim-indent-guides.git
 [submodule ".vim/bundle/matchit"]
 	path = .vim/bundle/matchit
 	url = git://github.com/tmhedberg/matchit.git
