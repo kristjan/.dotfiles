@@ -26,6 +26,7 @@ alias notes='vim ~/vimwiki/index.wiki'
 alias todo='vim ~/vimwiki/TODO.wiki'
 alias :e='vim'
 alias b='bundle exec'
+alias d='dotenv'
 
 alias synergys='killall synergys; synergys -f --config ~/.synergyrc --daemon'
 alias synergyc='killall synergyc; /usr/bin/synergyc kristjan.corp.causes.com'
@@ -51,9 +52,10 @@ alias gap='git add --patch'
 alias goot='cd $(git rev-parse --show-toplevel)'
 
 alias and='ant debug && adb install -r `ls bin/*-debug.apk`'
+alias redshift='psql service=redshift'
+alias redshift_dev='psql service=redshift-dev'
 alias sc='screen'
 alias scx='screen -xR'
-alias sql='mysql -uroot'
 
 alias cdgem='cd `ruby -e "puts Gem.path" | head -1`/gems'
 
@@ -64,14 +66,14 @@ alias r='. cd_to_repo $1'
 
 alias resmem='sudo /sbin/service memcached restart'
 
-alias listmp='find . | ack "(~|\.sw[op])$"'
-alias cleantmp='echo Deleting $(listmp | wc -l ) files && rm $(listmp)'
-alias cleandbg='cat /dev/null > log/debug.log'
+alias listmp='find . -name '*.sw[op]''
+alias rmtmp='echo Deleting $(listmp | wc -l ) files && listmp && listmp -exec rm "{}" \;'
+alias rmdbg='cat /dev/null > log/debug.log'
 alias debug='tail -f log/debug.log'
 alias log='tail -f log/development.log'
 
 # Apartment List
-alias cleandata='rm -rf Data-* pull'
+alias rmdata='rm -rf Data-* pull'
 alias format='xmllint --format'
 alias her='~/src/vb/h/bin/h'
 alias plink='rm -f pull; ln -sF `ls -ld Data-* | rev | cut -d" " -f1 | rev | sort | tail -1` pull; ls -ld pull'
