@@ -33,6 +33,8 @@ map <silent> <Leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimr
 " Window geometry
 map \w :set lines=86<CR> :set columns=161<CR>
 map \W :set lines=24<CR> :set columns=80<CR>
+set splitbelow
+set splitright
 
 " Text formatting
 set backspace=2
