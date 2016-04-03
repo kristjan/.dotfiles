@@ -1,6 +1,8 @@
 # vi: ft=dosini
 [main]
 
+history_file = ~/.pgsql_history
+
 # Enables context sensitive auto-completion. If this is disabled the all
 # possible completions will be listed.
 smart_completion = True
