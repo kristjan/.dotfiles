@@ -3,6 +3,10 @@ function bobblecp() {
   scp "$BOBBLE_HOST:$1" "$2"
 }
 
+function emoji() {
+  convert $1 -crop 600x600 -gravity north -resize 128x128 small.$1
+}
+
 function loadenv() {
   env=${1:-.env}
   echo Loading $env
