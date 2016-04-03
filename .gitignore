@@ -13,3 +13,6 @@ path/
 .jshintrc
 node_modules
 .sass-cache
+design/
+*.dump
+/.idea
