@@ -7,6 +7,7 @@ IRB.conf[:AUTO_INDENT] = true
 pwd = Dir.pwd
 git = File.exists?(File.join(pwd, '.git'))
 prompt = git ? File.basename(pwd) : ''
+IRB.conf[:PROMPT] ||= {}
 IRB.conf[:PROMPT][:MINIMAL_GIT] = {
   PROMPT_I: "#{prompt}> ",
   PROMPT_N: "#{prompt}> ",
