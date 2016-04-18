@@ -26,6 +26,8 @@ colors ir_black
 
 set t_ti= t_te=
 
+let mapleader = ';'
+
 " Mess with .vimrc
 map <Leader>v :sp ~/.vimrc<CR><C-W>_
 map <silent> <Leader>V :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
