@@ -77,6 +77,10 @@ let $JS_CMD = 'node'
 let g:syntastic_auto_loc_list=1
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['cpp'] }
 
+" vim-windowswap
+let g:windowswap_map_keys = 0 "prevent default bindings; conflicts with vimwiki
+nnoremap <silent> <leader>wm :call WindowSwap#EasyWindowSwap()<CR>
+
 highlight MatchParen   cterm=bold      ctermfg=1     ctermbg=0
 highlight OverLength   cterm=none      ctermfg=1     ctermbg=0
 highlight Pmenu                                      ctermbg=8
