@@ -75,6 +75,9 @@ let g:gist_clip_command = 'pbcopy'
 " JSLint Options
 let $JS_CMD = 'node'
 
+" Supertab Options
+let g:SuperTabCrMapping=1
+
 " Syntastic Options
 let g:syntastic_auto_loc_list=1
 let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['cpp'] }
