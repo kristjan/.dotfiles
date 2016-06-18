@@ -62,8 +62,6 @@ alias cdgem='cd `ruby -e "puts Gem.path" | head -1`/gems'
 alias rmlog='for file in log/*; do cat /dev/null > $file; done'
 alias running='ps aux | grep $1'
 
-alias r='. cd_to_repo $1'
-
 alias resmem='sudo /sbin/service memcached restart'
 
 alias listmp='find . -name '*.sw[op]''
