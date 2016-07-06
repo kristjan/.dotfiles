@@ -156,5 +156,5 @@ autocmd BufNewFile,BufRead HAML set textwidth=120
 
 autocmd VimEnter COMMIT_EDITMSG :call cursor(1,1)
 au BufWritePre * call TrimSpace()
-autocmd WinEnter,BufRead * match OverLength /\%81v.\+/
+"autocmd WinEnter,BufRead * match OverLength /\%81v.\+/
 autocmd BufEnter diary.wiki :VimwikiDiaryGenerateLinks
