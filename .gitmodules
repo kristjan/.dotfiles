@@ -115,3 +115,6 @@
 [submodule ".vim/bundle/vim-windowswap"]
 	path = .vim/bundle/vim-windowswap
 	url = https://github.com/wesQ3/vim-windowswap.git
+[submodule ".vim/bundle/vim-go"]
+	path = .vim/bundle/vim-go
+	url = git://github.com/fatih/vim-go

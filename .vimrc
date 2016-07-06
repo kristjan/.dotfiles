@@ -80,7 +80,9 @@ let g:SuperTabCrMapping=1
 
 " Syntastic Options
 let g:syntastic_auto_loc_list=1
-let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['cpp'] }
+let g:syntastic_mode_map = { 'mode': 'active', 'passive_filetypes': ['cpp', 'go'] }
+let g:syntastic_go_checkers = ['golint', 'govet', 'errcheck']
+
 
 highlight MatchParen   cterm=bold      ctermfg=1     ctermbg=0
 highlight OverLength   cterm=none      ctermfg=1     ctermbg=0
