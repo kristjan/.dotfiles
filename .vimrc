@@ -71,6 +71,7 @@ let g:CommandTMaxHeight=10
 
 " Gist options
 let g:gist_clip_command = 'pbcopy'
+let g:gist_post_private = 1
 
 " JSLint Options
 let $JS_CMD = 'node'
