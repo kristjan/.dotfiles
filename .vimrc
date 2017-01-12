@@ -62,6 +62,9 @@ set statusline+=
 set laststatus=2
 set mouse= " Off!
 
+" Ignore files
+set wildignore=node_modules/*,tmp/*
+
 " Blockle options
 let g:blockle_mapping = '<Leader>d'
 
@@ -121,7 +124,6 @@ map <Leader>y "*y
 map <Leader>P "*p
 map <Leader>Y ggVG"*y
 
-
 map <Leader>T :CommandTFlush<CR>
 
 map <Leader>f :lfirst<CR>
@@ -150,7 +152,7 @@ autocmd BufNewFile,BufRead *.ejs set filetype=jst
 " Recognize Markdown
 autocmd BufNewFile,BufRead *.md,*.markdown set filetype=markdown
 
-" 72-wide lines in commit messages
+" Custom widths by filetype
 autocmd BufNewFile,BufRead COMMIT_EDITMSG set textwidth=72
 autocmd BufNewFile,BufRead GITCOMMIT set textwidth=72
 autocmd BufNewFile,BufRead HAML set textwidth=120
