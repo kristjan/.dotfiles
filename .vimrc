@@ -71,6 +71,8 @@ let g:blockle_mapping = '<Leader>d'
 " Command-T Options
 let g:CommandTMaxFiles=30000
 let g:CommandTMaxHeight=10
+let g:CommandTMinHeight=10
+let g:CommandTDebounce=50
 
 " Gist options
 let g:gist_clip_command = 'pbcopy'
