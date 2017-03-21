@@ -64,8 +64,8 @@ alias running='ps aux | grep $1'
 
 alias resmem='sudo /sbin/service memcached restart'
 
-alias listmp='find . -name '*.sw[op]''
-alias rmtmp='echo Deleting $(listmp | wc -l ) files && listmp && listmp -exec rm "{}" \;'
+alias lstmp='find . -name '*.sw[op]''
+alias rmtmp='echo Deleting $(lstmp | wc -l ) files && lstmp && lstmp -exec rm "{}" \;'
 alias rmdbg='cat /dev/null > log/debug.log'
 alias debug='tail -f log/debug.log'
 alias log='tail -f log/development.log'
