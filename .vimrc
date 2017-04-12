@@ -63,7 +63,7 @@ set laststatus=2
 set mouse= " Off!
 
 " Ignore files
-set wildignore=node_modules/*,tmp/*
+set wildignore=node_modules/*,*/node_modules/*,tmp/*
 
 " Blockle options
 let g:blockle_mapping = '<Leader>d'
