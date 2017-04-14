@@ -73,7 +73,6 @@ alias log='tail -f log/development.log'
 # Apartment List
 alias rmdata='rm -rf Data-* pull'
 alias format='xmllint --format'
-alias her='~/src/vb/h/bin/h'
 alias plink='rm -f pull; ln -sF `ls -ld Data-* | rev | cut -d" " -f1 | rev | sort | tail -1` pull; ls -ld pull'
 
 # Typos
