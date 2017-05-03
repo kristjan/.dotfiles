@@ -65,6 +65,11 @@ set mouse= " Off!
 " Ignore files
 set wildignore=node_modules/*,*/node_modules/*,tmp/*
 
+" Ack options
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep --smart-case'
+endif
+
 " Blockle options
 let g:blockle_mapping = '<Leader>d'
 
@@ -111,7 +116,7 @@ map <C-h> <C-w>h
 let g:windowswap_map_keys = 0 "prevent default bindings; conflicts with vimwiki
 nnoremap <silent> <C-w>m :call WindowSwap#EasyWindowSwap()<CR>
 
-map <Leader>a :Ack
+map <Leader>a :Ack!<Space>
 map <Leader>A "zyw:exe ":Ack ".@z<CR>
 map <Leader>c :ccl<CR>:lcl<CR>
 map <silent> <Leader>h :nohlsearch<CR>
