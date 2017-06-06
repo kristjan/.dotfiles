@@ -8,6 +8,8 @@ export AWS_CREDENTIAL_FILE=~/.aws.cfg
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_NO_AUTO_UPDATE=1
 
+BREW_PREFIX=$(brew --prefix)
+
 set -o vi
 
 HELPERS="
@@ -22,13 +24,13 @@ for helper in $HELPERS; do
   fi
 done
 
-if [ -f `brew --prefix`/etc/bash_completion ]; then
-  . `brew --prefix`/etc/bash_completion
+if [ -f $BREW_PREFIX/etc/bash_completion ]; then
+  . $BREW_PREFIX/etc/bash_completion
   PS1='\W$(__git_ps1 "(%s)")\$ '
 fi
 
-if [ -f `brew --prefix`/etc/autojump.bash ]; then
-  . `brew --prefix`/etc/autojump.bash
+if [ -f $BREW_PREFIX/etc/autojump.sh ]; then
+  . $BREW_PREFIX/etc/autojump.sh
 fi
 
 if [ `type -t __git_complete`"" == "function" ]; then
