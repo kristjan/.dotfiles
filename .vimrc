@@ -108,6 +108,8 @@ highlight StatusLineNC cterm=none      ctermfg=0     ctermbg=8
 highlight ToDo         cterm=underline ctermfg=3     ctermbg=none
 highlight ColorColumn  cterm=none      ctermfg=1     ctermbg=233
 
+" Markdown
+highlight htmlItalic   cterm=none      ctermfg=6     ctermbg=0
 
 " Shortcuts
 map <C-k> <C-w>k
