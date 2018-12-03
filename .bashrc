@@ -1,3 +1,5 @@
+# Run each time you open a terminal, not just once at login
+
 stty stop ""
 
 export EDITOR=vim

@@ -1,3 +1,5 @@
+# Run in login shells, theoretically once and not with each new terminal
+
 export PATH=/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/local/sbin:$PATH:/Users/kristjan/lib/android/tools:/Users/kristjan/lib/android/platform-tools:/Users/kristjan/lib/android/ndk:~/bin:~/src/go/bin:/Applications/Postgres.app/Contents/Versions/latest/bin
 
 ### Added by the Heroku Toolbelt
