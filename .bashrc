@@ -11,8 +11,6 @@ export GOPATH=$HOME/src/go
 export HOMEBREW_NO_ANALYTICS=1
 export HOMEBREW_NO_AUTO_UPDATE=1
 
-BREW_PREFIX=$(brew --prefix)
-
 set -o vi
 
 HELPERS="
@@ -27,13 +25,15 @@ for helper in $HELPERS; do
   fi
 done
 
-if [ -f $BREW_PREFIX/etc/bash_completion ]; then
-  . $BREW_PREFIX/etc/bash_completion
+if type brew 2&>/dev/null; then
+  for completion_file in $(brew --prefix)/etc/bash_completion.d/*; do
+    source "$completion_file"
+  done
   PS1='\W$(__git_ps1 "(%s)")\$ '
 fi
 
-if [ -f $BREW_PREFIX/etc/autojump.sh ]; then
-  . $BREW_PREFIX/etc/autojump.sh
+if [ -f $(brew --prefix)/etc/autojump.sh ]; then
+  . $(brew --prefix)/etc/autojump.sh
 fi
 
 if [ `type -t __git_complete`"" == "function" ]; then
