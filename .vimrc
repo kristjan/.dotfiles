@@ -73,11 +73,8 @@ endif
 " Blockle options
 let g:blockle_mapping = '<Leader>d'
 
-" Command-T Options
-let g:CommandTMaxFiles=30000
-let g:CommandTMaxHeight=10
-let g:CommandTMinHeight=10
-let g:CommandTDebounce=50
+" CtrlP / Command-T
+map <Leader>t <C-P>
 
 " Gist options
 let g:gist_clip_command = 'pbcopy'
@@ -134,8 +131,6 @@ map <Leader>r :redraw!<CR>
 map <Leader>y "*y
 map <Leader>P "*p
 map <Leader>Y ggVG"*y
-
-map <Leader>T :CommandTFlush<CR>
 
 map <Leader>f :lfirst<CR>
 map <Leader>n :lnext<CR>
