@@ -75,6 +75,7 @@ let g:blockle_mapping = '<Leader>d'
 
 " CtrlP / Command-T
 map <Leader>t <C-P>
+map <Leader>b :CtrlPBuffer<CR>
 
 " Gist options
 let g:gist_clip_command = 'pbcopy'
