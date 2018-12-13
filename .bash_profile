@@ -1,6 +1,6 @@
 # Run in login shells, theoretically once and not with each new terminal
 
-export PATH=/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/local/sbin:$PATH:~/bin:~/src/go/bin:/Applications/Postgres.app/Contents/Versions/latest/bin
+export PATH=~/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/local/sbin:$PATH:~/src/go/bin:/Applications/Postgres.app/Contents/Versions/latest/bin
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
