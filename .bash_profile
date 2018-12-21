@@ -5,6 +5,9 @@ export PATH=~/bin:/usr/local/opt/coreutils/libexec/gnubin:/usr/local/bin:/usr/lo
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+# Bash completion framework, installed by Homebrew
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
+
 if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi

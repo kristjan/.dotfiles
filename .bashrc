@@ -25,19 +25,17 @@ for helper in $HELPERS; do
   fi
 done
 
-if type brew 2&>/dev/null; then
-  for completion_file in $(brew --prefix)/etc/bash_completion.d/*; do
-    source "$completion_file"
-  done
-  PS1='\W$(__git_ps1 "(%s)")\$ '
-fi
 
 if [ -f $(brew --prefix)/etc/autojump.sh ]; then
   . $(brew --prefix)/etc/autojump.sh
 fi
 
-if [ `type -t __git_complete`"" == "function" ]; then
+if [ $(type -t __git_complete)"" == "function" ]; then
   __git_complete g __git_main
+fi
+
+if [ $(type -t __git_ps1)"" == "function" ]; then
+  PS1='\W$(__git_ps1 "(%s)")\$ '
 fi
 
 # added by travis gem
