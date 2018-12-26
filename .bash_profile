@@ -12,17 +12,10 @@ if [ -f ~/.bashrc ]; then
   . ~/.bashrc
 fi
 
-export NVM_DIR="$HOME/.nvm"
-# Loading NVM is slow (nearly a second) and delays every new shell when most
-# will never run `nvm`. This tiny function delays load until the first time NVM
-# is called, then gets replaced.
-function nvm() {
-  echo "Havn't loaded NVM yet; doing so now."
-  . "$(brew --prefix nvm)/nvm.sh"
-  echo nvm $@
-  nvm $@
-}
-
 eval "$(rbenv init -)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
