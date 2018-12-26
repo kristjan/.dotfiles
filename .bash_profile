@@ -8,9 +8,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # Bash completion framework, installed by Homebrew
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
-if [ -f ~/.bashrc ]; then
-  . ~/.bashrc
-fi
+[ -s ~/.bashrc ] && . ~/.bashrc
 
 eval "$(rbenv init -)"
 
