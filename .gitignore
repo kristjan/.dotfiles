@@ -17,3 +17,4 @@ design/
 *.dump
 /.idea
 rand/
+.vim/bundle/*

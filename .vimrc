@@ -1,9 +1,46 @@
-filetype off
-
-call pathogen#infect()
-
-syntax on
-filetype plugin indent on
+" Plugins
+call plug#begin('~/.vim/bundle')
+Plug 'Lokaltog/vim-easymotion'
+Plug 'Townk/vim-autoclose'
+Plug 'briancollins/vim-jst'
+Plug 'cakebaker/scss-syntax.vim'
+Plug 'elixir-lang/vim-elixir'
+Plug 'fatih/vim-go'
+Plug 'godlygeek/tabular'
+Plug 'groenewege/vim-less'
+Plug 'jgdavey/vim-blockle'
+Plug 'kchmck/vim-coffee-script'
+Plug 'kien/ctrlp.vim'
+Plug 'kristjan/scrimmage'
+Plug 'kristjan/vim-human-dates'
+Plug 'mattn/gist-vim'
+Plug 'mattn/webapi-vim'
+Plug 'michaeljsmith/vim-indent-object'
+Plug 'mileszs/ack.vim'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'scrooloose/nerdcommenter'
+Plug 'scrooloose/syntastic'
+Plug 'suan/vim-instant-markdown'
+Plug 'tmhedberg/matchit'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-git'
+Plug 'tpope/vim-markdown'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-speeddating'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'vim-python/python-syntax'
+Plug 'vim-ruby/vim-ruby'
+Plug 'vim-scripts/InsertChar'
+Plug 'vim-scripts/jQuery'
+Plug 'vimwiki/vimwiki'
+Plug 'walm/jshint.vim'
+Plug 'wesQ3/vim-windowswap'
+Plug 'wgibbs/vim-irblack'
+call plug#end()
 
 set nocompatible
 
@@ -85,9 +122,6 @@ let g:gist_open_browser_after_post = 1
 
 " JSLint Options
 let $JS_CMD = 'node'
-
-" Supertab Options
-let g:SuperTabCrMapping=1
 
 " Syntastic Options
 let g:syntastic_auto_loc_list=1
