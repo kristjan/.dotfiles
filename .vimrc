@@ -37,6 +37,7 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/InsertChar'
 Plug 'vim-scripts/jQuery'
 Plug 'vimwiki/vimwiki'
+Plug 'w0rp/ale'
 Plug 'walm/jshint.vim'
 Plug 'wesQ3/vim-windowswap'
 Plug 'wgibbs/vim-irblack'
@@ -107,6 +108,11 @@ if executable('ag')
   let g:ackprg = 'ag --vimgrep --smart-case'
 endif
 
+" Ale options
+let g:ale_virtualtext_cursor=1
+let g:ale_sign_warning='⚠'
+let g:ale_sign_error='💥'
+
 " Blockle options
 let g:blockle_mapping = '<Leader>d'
 
@@ -139,6 +145,8 @@ highlight StatusLine   cterm=bold      ctermfg=7     ctermbg=8
 highlight StatusLineNC cterm=none      ctermfg=0     ctermbg=8
 highlight ToDo         cterm=underline ctermfg=3     ctermbg=none
 highlight ColorColumn  cterm=none      ctermfg=1     ctermbg=233
+
+highlight SignColumn                                 ctermbg=black
 
 " Markdown
 highlight htmlItalic   cterm=none      ctermfg=6     ctermbg=0
