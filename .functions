@@ -21,6 +21,22 @@ function loadenv() {
   fi
 }
 
+function rake() {
+  if [ -f ./Gemfile ]; then
+    bundle exec rake "$@"
+  else
+    $(which rake) "$@"
+  fi
+}
+
+function rspec() {
+  if [ -f ./Gemfile ]; then
+    bundle exec rspec "$@"
+  else
+    $(which rspec) "$@"
+  fi
+}
+
 function urlencode() {
   perl -MURI::Escape -e "print uri_escape('$1');"
 }
