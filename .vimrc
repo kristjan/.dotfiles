@@ -113,6 +113,7 @@ endif
 let g:ale_virtualtext_cursor=1
 let g:ale_sign_warning='⚠'
 let g:ale_sign_error='💥'
+set signcolumn=yes
 
 " Blockle options
 let g:blockle_mapping = '<Leader>d'
@@ -147,7 +148,7 @@ highlight StatusLineNC cterm=none      ctermfg=0     ctermbg=8
 highlight ToDo         cterm=underline ctermfg=3     ctermbg=none
 highlight ColorColumn  cterm=none      ctermfg=1     ctermbg=233
 
-highlight SignColumn                                 ctermbg=black
+highlight SignColumn   cterm=none                    ctermbg=black
 
 " Markdown
 highlight htmlItalic   cterm=none      ctermfg=6     ctermbg=0
