@@ -165,7 +165,7 @@ nnoremap <silent> <C-w>m :call WindowSwap#EasyWindowSwap()<CR>
 
 map <Leader>a :Ack!<Space>
 map <Leader>A "zyw:exe ":Ack ".@z<CR>
-map <Leader>c :ccl<CR>:lcl<CR>
+map <Leader>l :ccl<CR>:lcl<CR>
 map <silent> <Leader>h :nohlsearch<CR>
 map <Leader>d :DateFromLongEpoch<CR>
 
