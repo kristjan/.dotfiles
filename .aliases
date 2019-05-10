@@ -77,4 +77,5 @@ alias plink='rm -f pull; ln -sF `ls -ld Data-* | rev | cut -d" " -f1 | rev | sor
 
 # Typos
 alias mc='mv'
+alias vim='nvim'
 alias vi='vim'
