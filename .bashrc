@@ -38,6 +38,3 @@ fi
 if [ $(type -t __git_ps1)"" == "function" ]; then
   PS1='\W$(__git_ps1 "(%s)")\$ '
 fi
-
-# added by travis gem
-[ -f /Users/kristjan/.travis/travis.sh ] && source /Users/kristjan/.travis/travis.sh
