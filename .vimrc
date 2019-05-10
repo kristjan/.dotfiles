@@ -197,6 +197,11 @@ map <Leader>x  :VimwikiToggleListItem<CR>
 
 nnoremap <Space> :<C-U>call InsertChar#insert(v:count1)<CR>
 
+
+nnoremap [<Space> O<Esc>j
+nnoremap ]<Space> o<Esc>k
+
+
 " Anti-shortcuts
 map <S-k> k<S-j>$
 map <S-y> y$
