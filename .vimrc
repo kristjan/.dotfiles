@@ -42,6 +42,7 @@ Plug 'w0rp/ale'
 Plug 'walm/jshint.vim'
 Plug 'wesQ3/vim-windowswap'
 Plug 'wgibbs/vim-irblack'
+Plug 'vim-scripts/tir_black'
 call plug#end()
 
 set nocompatible
@@ -61,7 +62,7 @@ function! TrimSpace()
 endfunction
 
 " Colors
-colors ir_black
+colors tir_black
 
 set t_ti= t_te=
 
