@@ -119,6 +119,9 @@ set signcolumn=yes
 " Blockle options
 let g:blockle_mapping = '<Leader>d'
 
+" Instant Markdown options
+let g:instant_markdown_autostart = 0
+
 " CtrlP / Command-T
 map <Leader>t <C-P>
 map <Leader>b :CtrlPBuffer<CR>
