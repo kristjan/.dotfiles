@@ -14,6 +14,7 @@ export HOMEBREW_NO_AUTO_UPDATE=1
 set -o vi
 
 HELPERS="
+  .env
   Dropbox/.env
   .aliases
   .functions
