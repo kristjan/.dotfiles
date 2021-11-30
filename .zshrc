@@ -1,3 +1,5 @@
+setopt interactivecomments
+
 . ~/.aliases
 
 eval "$(frum init)"
