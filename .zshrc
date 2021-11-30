@@ -1,4 +1,6 @@
-setopt interactivecomments
+set -o vi
+
+setopt interactivecomments # Turn on # as a comment character
 
 . ~/.zaliases
 
