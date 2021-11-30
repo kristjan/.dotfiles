@@ -1,6 +1,6 @@
 setopt interactivecomments
 
-. ~/.aliases
+. ~/.zaliases
 
 eval "$(frum init)"
 eval "$(/opt/homebrew/bin/brew shellenv)"
