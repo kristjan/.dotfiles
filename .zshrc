@@ -1,4 +1,5 @@
-set -o vi
+bindkey -v
+bindkey "^?" backward-delete-char
 
 setopt interactivecomments # Turn on # as a comment character
 
