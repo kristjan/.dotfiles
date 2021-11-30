@@ -1,5 +1,6 @@
 bindkey -v
 bindkey "^?" backward-delete-char
+bindkey '^R' history-incremental-search-backward
 
 setopt interactivecomments # Turn on # as a comment character
 
