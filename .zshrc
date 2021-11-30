@@ -15,7 +15,15 @@ setopt correctall
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(frum init)"
 
+# Set up Git data for prompt
+autoload -Uz vcs_info
+precmd_vcs_info() { vcs_info }
+precmd_functions+=( precmd_vcs_info )
+setopt prompt_subst
+zstyle ':vcs_info:git:*' formats ' (%b)'
+zstyle ':vcs_info:*' enable git
+
 # %(?.%F{green}√.%F{red}?%?)%f - Last exit code, or √ if success
 # %B%F{240}%~%f%b - Gray cwd
 # %#  - # when root, else %
-PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{240}%~%f%b %# '
+PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{240}%~'\$vcs_info_msg_0_'%f%b %# '
