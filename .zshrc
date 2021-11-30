@@ -14,3 +14,8 @@ setopt correctall
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 eval "$(frum init)"
+
+# %(?.%F{green}√.%F{red}?%?)%f - Last exit code, or √ if success
+# %B%F{240}%~%f%b - Gray cwd
+# %#  - # when root, else %
+PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{240}%~%f%b %# '
