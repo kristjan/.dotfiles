@@ -29,3 +29,5 @@ zstyle ':vcs_info:*' enable git
 # %B%F{240}%~%f%b - Gray cwd
 # %#  - # when root, else %
 PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{240}%~'\$vcs_info_msg_0_'%f%b %# '
+
+eval "$(rbenv init - zsh)"
