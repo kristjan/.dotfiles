@@ -15,7 +15,6 @@ setopt correctall
 . ~/.zaliases
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
-eval "$(frum init)"
 
 # Set up Git data for prompt
 autoload -Uz vcs_info
