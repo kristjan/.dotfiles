@@ -31,3 +31,5 @@ zstyle ':vcs_info:*' enable git
 PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{240}%~'\$vcs_info_msg_0_'%f%b %# '
 
 eval "$(rbenv init - zsh)"
+
+[ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
