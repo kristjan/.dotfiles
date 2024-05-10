@@ -16,6 +16,9 @@ setopt correctall
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
+# Autocompletion
+autoload -Uz compinit && compinit
+
 # Set up Git data for prompt
 autoload -Uz vcs_info
 precmd_vcs_info() { vcs_info }
