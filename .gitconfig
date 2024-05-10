@@ -11,7 +11,7 @@
   bush = !git push -u origin `git symbolic-ref --short HEAD`
   changes = !sh -c 'git diff --stat $1 | tail -1' -
   cd = checkout dev
-  cm = checkout master
+  cm = checkout main
   co = checkout
   conflicts = !vim $(git status | fgrep modified | cut -d: -f2)
   cur = name-rev --name-only HEAD
