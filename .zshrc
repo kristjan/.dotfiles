@@ -38,4 +38,5 @@ eval "$(rbenv init - zsh)"
 [ -f /opt/homebrew/etc/profile.d/autojump.sh ] && . /opt/homebrew/etc/profile.d/autojump.sh
 
 path+=(~/bin)
+path+=(~/.local/bin)
 path+=($(brew --prefix python)/libexec/bin)
