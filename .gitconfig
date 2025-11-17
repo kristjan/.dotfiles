@@ -6,30 +6,22 @@
   token = $GITHUB_TOKEN
 
 [alias]
-  bubble = !sh -c 'git checkout master && git pull && git checkout $1 && git rebase master && git checkout master && git merge --no-ff $1' -
   br = branch
-  bush = !git push -u origin `git symbolic-ref --short HEAD`
-  changes = !sh -c 'git diff --stat $1 | tail -1' -
-  cd = checkout dev
   cm = checkout main
   co = checkout
-  conflicts = !vim $(git status | fgrep modified | cut -d: -f2)
   cur = name-rev --name-only HEAD
-  deploy = push heroku master
-  form = !git fetch origin && git rebase origin/master
-  fix  = commit -m "Fixup"
-  horse-around = push production stable:master
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%ar) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-  last = log -1
-  pr = !hub pull-request
-  remaster = rebase origin/master
-  rev = rebase origin/dev
   st = status -sb
-  sub = !cd $(git rev-parse --show-toplevel) && git submodule update --init | fgrep -v registered
-  v = rev-parse HEAD
 
 [apply]
   whitespace = fix
+
+[branch]
+	autosetuprebase = remote
+  sort = -committerdate
+
+[branch "master"]
+	rebase = true
 
 [color]
   ui = auto
@@ -45,54 +37,67 @@
   old = red bold
   whitespace = yellow reverse
 [color "interactive"]
-  prompt = green bold
+  error = red bold
   header = cyan
   help = yellow
-  error = red bold
+  prompt = green bold
 [color "status"]
   changed = yellow
 
 [core]
-  excludesfile = ~/.gitignore
   editor = vim
+  excludesfile = ~/.gitignore
+  fsmonitor = true
+  untrackedCache = true
+
+[credential]
+	helper = osxkeychain
 
 [diff]
+  algorithm = histogram
+  colorMoved = plain
+  mnemonicPrefix = true
+  renames = true
   tool = icdiff
+
 [difftool]
   prompt = false
 [difftool "icdiff"]
   cmd = /usr/local/bin/icdiff --line-numbers $LOCAL $REMOTE
 
+[feature]
+  experimental = true
+
+[fetch]
+  all = true
+  pruneTags = true
+
+[grep]
+  patternType = perl
+
 [help]
   autocorrect = 5
 
+[init]
+  defaultBranch = main
+
 [merge]
+  conflictstyle = zdiff3
   log = 100
 
 [push]
+  autoSetupRemote = true
   default = simple
   followTags = true
 
-[rerere]
-  enabled = 1
-
-[branch]
-	autosetuprebase = remote
-
-[branch "master"]
-	rebase = true
-
-[credential]
-	helper = osxkeychain
-
 [rebase]
-	autosquash = true
+	autoSquash = true
+  autoStash = true
+  updateRefs = true
 
-[remote "origin"]
-	prune = true
+[rerere]
+  autoupdate = true
+  enabled = true
 
-[filter "lfs"]
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
-	clean = git-lfs clean -- %f
+[tag]
+  sort = version:refname
