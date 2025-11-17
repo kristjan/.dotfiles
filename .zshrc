@@ -43,3 +43,6 @@ export NVM_DIR="$HOME/.nvm"
 path+=(~/bin)
 path+=(~/.local/bin)
 path+=($(brew --prefix python)/libexec/bin)
+
+export DO_NOT_TRACK=1
+export TURBO_TELEMETRY_DISABLED=1
