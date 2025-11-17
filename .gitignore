@@ -18,3 +18,5 @@ design/
 /.idea
 rand/
 .vim/bundle/*
+env/
+godot-docs/
