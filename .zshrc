@@ -8,6 +8,7 @@ setopt extendedhistory # Keep timestamps
 setopt appendhistory # Otherwise a shell overwrites the file as it exits
 setopt histignoredups # Don't store duplicate commands
 setopt histreduceblanks # Don't store blank lines
+setopt histignorespace # Don't save space-prefixed secrets
 
 setopt correct
 setopt correctall
