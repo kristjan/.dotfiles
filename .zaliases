@@ -21,4 +21,7 @@ alias gad='git add'
 alias gap='git add --patch'
 alias goot='cd $(git rev-parse --show-toplevel)'
 
+alias ffmpeg="ffmpeg -hide_banner"
+alias ffprobe="ffprobe -hide_banner"
+
 alias vim='nvim'
