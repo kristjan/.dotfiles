@@ -15,7 +15,9 @@ setopt correctall
 
 . ~/.zaliases
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if [ -x "/opt/homebrew/bin/brew" ]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
 
 # Autocompletion
 autoload -Uz compinit && compinit
@@ -33,7 +35,10 @@ zstyle ':vcs_info:*' enable git
 # %#  - # when root, else %
 PROMPT='%(?.%F{green}√.%F{red}?%?)%f %B%F{240}%~'\$vcs_info_msg_0_'%f%b %# '
 
-eval "$(rbenv init - zsh)"
+if command -v rbenv >/dev/null; then
+  eval "$(rbenv init - zsh)"
+fi
+
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
@@ -42,7 +47,9 @@ export NVM_DIR="$HOME/.nvm"
 
 path+=(~/bin)
 path+=(~/.local/bin)
-path+=($(brew --prefix python)/libexec/bin)
+if command -v brew >/dev/null; then
+  path+=($(brew --prefix python)/libexec/bin)
+fi
 
 export DO_NOT_TRACK=1
 export TURBO_TELEMETRY_DISABLED=1
